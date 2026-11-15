@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101311">
+    <meta name="description" content="A portfolio for a HidingStealth, a Roblox Luau scripter.">
+    <meta property="og:title" content="HidingStealth's Portfolio">
+    <meta property="og:description" content="Luau Scripter with over 5 years of experience.">
+    <meta property="og:type" content="website">
+    <title>HidingStealth's Portfolio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="stylesheet" href="css/showcase.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#home" aria-label="HidingStealth home">
+          <span class="wordmark-icon" aria-hidden="true">H</span>
+          <span>HidingStealth's Portfolio</span>
+        </a>
+        <button class="menu-toggle icon-button" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#skills">Skills</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle icon-button" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.4A8.5 8.5 0 0 1 8.6 3.8 8.5 8.5 0 1 0 20.2 15.4Z"/></svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="home">
+        <div class="hero-grid container">
+          <div class="hero-copy">
+            <div class="availability"><span class="status-dot"></span> COMMISSIONS OPEN</div>
+            <p class="eyebrow">ROBLOX DEVELOPER <span class="eyebrow-divider">/</span> LUAU SCRIPTER</p>
+            <h1>Making the<br>gameplay <span class="text-accent">feel right.</span></h1>
+            <p class="hero-description">
+              Hey, I’m <strong>HidingStealth</strong> — a Roblox scripter who turns ambitious ideas into smooth, 
+              satisfying player experiences.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">See what I've done <span aria-hidden="true">↗</span></a>
+              <a class="button button-quiet" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-meta">
+              <span><span class="meta-spark">✳</span>Based in California, PT</span>
+              <span>Available 7 days a week</span>
+            </div>
+          </div>
+
+          <div class="code-window" aria-label="Decorative Luau code preview">
+            <div class="window-top">
+              <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+              <span>CombatService.server.luau</span>
+              <span class="window-language">LUAU</span>
+            </div>
+            <div class="code-body" aria-hidden="true">
+              <div>
+                <span class="line-number">01</span>
+                <span class="code-comment">--!strict</span>
+              </div>
+              <div>
+                <span class="line-number">02</span>
+                <span class="code-purple">local</span> CombatService = {}
+              </div>
+              <div class="code-empty">
+                <span class="line-number">03</span>
+              </div>
+              <div>
+                <span class="line-number">04</span>
+                <span class="code-purple">function</span> CombatService:<span class="code-blue">dealDamage</span>(target: Humanoid, amount: number)
+              </div>
+              <div>
+                <span class="line-number">05</span>
+                &nbsp;&nbsp;<span class="code-purple">if</span> target.Health <= 0 <span class="code-purple">then</span>
+              </div>
+              <div>
+                <span class="line-number">06</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-purple">return</span>
+              </div>
+              <div>
+                <span class="line-number">07</span>
+                &nbsp;&nbsp;<span class="code-purple">end</span>
+              </div>
+              <div>
+                <span class="line-number">08</span>
+                &nbsp;&nbsp;target:<span class="code-blue">TakeDamage</span>(amount)
+              </div>
+              <div>
+                <span class="line-number">09</span>
+                <span class="code-purple">end</span>
+              </div>
+              <div class="code-empty">
+                <span class="line-number">10</span>
+              </div>
+              <div>
+                <span class="line-number">11</span>
+                <span class="code-purple">return</span> CombatService
+              </div>
+            </div>
+            <div class="code-footer"><span><span class="status-dot"></span> All systems operational</span><span>✳ Security-First</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section section-shell" id="work">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">A FEW THINGS I’VE MADE</p><h2>Selected <span class="text-accent">work.</span></h2></div>
+            <a class="text-link" href="#contact">Have a project in mind? <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="project-grid">
+            <article class="project-card project-featured">
+              <div class="project-art project-placeholder">
+                <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/kSrG5MUTSQE?si=QcjcmQ-dnN8_HeYC" 
+             title="Pizza Gaem Video (YouTube Video Player)" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div class="project-info">
+                <div class="project-title-line"><h3>pizza gaem (300+ Visits)</h3><span class="project-status status-personal"><i></i> PERSONAL</span></div>
+                <p>A simple project about making pizzas.</p>
+                <div class="tag-list"><span>Leaderboards</span><span>Camera Manipulation</span><span>Sequences</span><span>Game Design</span></div>
+                <a class="project-link" target="_blank" href="https://www.roblox.com/games/136087620633519/pizza-gaem" aria-label="View pizza gaem">View project <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-placeholder">
+                <span>YOUR PROJECT HERE</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-line"><h3>Empty Project</h3><span class="project-status status-offline"><i></i> OFFLINE</span></div>
+                <p>There's no project here yet, unfortunately. Yours could be the first!</p>
+                <div class="tag-list"><span>Placeholder</span></div>
+                <a class="project-link" href="#contact" aria-label="Ask me about {BLANK}">View project <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-art project-placeholder">
+                <span>YOUR PROJECT HERE</span>
+              </div>
+              <div class="project-info">
+                <div class="project-title-line"><h3>Empty Project</h3><span class="project-status status-offline"><i></i> OFFLINE</span></div>
+                <p>There's no project here yet, unfortunately. Yours could be the first!</p>
+                <div class="tag-list"><span>Placeholder</span></div>
+                <a class="project-link" href="#contact" aria-label="Ask me about {BLANK}">View project <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-section section-shell" id="showcase">
+        <div class="container showcase-layout">
+          <div class="showcase-copy">
+            <p class="eyebrow">FEATURED SHOWCASE</p>
+            <h2>Small details.<br><span class="text-accent">Big difference.</span></h2>
+            <p class="showcase-description">A closer look at a system I’m proud of: a class-based mortar system that fires at the player's location using advanced Lerping math.</p>
+            <div class="showcase-points">
+              <div><span class="point-icon">01</span><p><strong>The challenge</strong><br>Creating a smooth parabolic trajectory system for the mortars.</p></div>
+              <div><span class="point-icon">02</span><p><strong>My approach</strong><br>Using the distance from a precalculated middle point to determine coordinates along specific alphas.</p></div>
+              <div><span class="point-icon">03</span><p><strong>The outcome</strong><br>Stronger knowledge of non-linear movement systems, lerping, and tweening.</p></div>
+            </div>
+            <a class="button button-outline" href="#contact">Ask me about this build <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="showcase-visual">
+            <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/dgFwnyfeMyY?si=WlfCLQhwXDQMlp0h" 
+             title="Featured Showcase (YouTube Video Player)" frameborder="0" 
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section section-shell" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">WHAT I BRING TO THE TEAM</p><h2>Tools of the <span class="text-accent">trade.</span></h2></div>
+            <p class="heading-note">A growing toolkit, put to work on real player experiences.</p>
+          </div>
+          <div class="skills-checklist" aria-label="Skills checklist">
+            <div class="checklist-column">
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Luau Scripting</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Rojo + GitHub Workflow</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>UserInputService & ContextActionService</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Modular Programming w/ OOP</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Type-safe, secure code</span></label>
+            </div>
+            <div class="checklist-column">
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Functional UI Programming</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Tweens & Lerping</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>ProfileStore (Data Saving)</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Secure Client-Server Communication</span></label>
+              <label class="skill-item"><input type="checkbox" checked disabled><span>Monetization Handling</span></label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section-shell" id="about">
+        <div class="container about-layout">
+          <div class="about-image">
+            <img class="about-image-content" alt="Portrait or Roblox avatar" src="/assets/fish85avatar.webp">
+          </div>
+          <div class="about-copy">
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <h2>Curious by nature.<br><span class="text-accent">Developer by choice.</span></h2>
+            <p class="about-lead">
+              I’m a Roblox developer who loves figuring out what makes a game feel fun — then bringing that feeling to life with code.
+            </p>
+            <p class="about-body">
+              Growing up on Roblox, I always wanted to make my own games. 
+              At first, I was your run-of-the-mill free model user, barely able to call my work my own.
+              Since then, I've changed a lot, but my passion stayed.
+              I'm ready to build something great, one step at a time.
+            </p>
+            <div class="about-facts">
+              <div><strong>5 Years</strong><span>Scripting Experience</span></div>
+              <div><strong>300+ Visits</strong><span>Across all games</span></div>
+              <div><strong>Unlimited</strong><span>Possibilities</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact">
+        <div class="container contact-panel">
+          <div class="contact-decoration" aria-hidden="true"><span>✳</span><i></i><b></b></div>
+          <div class="contact-content">
+            <p class="eyebrow">GOT AN IDEA FOR YOUR NEXT GAME?</p>
+            <h2>Let’s build<br><span class="text-accent">something great.</span></h2>
+            <p>I can get back to you in under 12 hours under normal circumstances. DM me with link below for fastest replies.</p>
+            <a class="button button-primary" href="https://discord.com/users/1561405274982580368" target="_blank" rel="noreferrer">Contact Me on Discord <span>↗</span></a>
+          </div>
+          <div class="contact-links">
+            <a href="https://www.roblox.com/users/10684106539/profile" target="_blank" rel="noreferrer">Roblox <span>↗</span></a>
+            <a href="https://github.com/GameMaster97" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>View this site on <a href="https://github.com/dashboard" target="_blank">GitHub</a></p>
+        <a class="back-top" href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>

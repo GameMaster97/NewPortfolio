@@ -1,0 +1,66 @@
+.skills-section {
+  padding: 93px 0 99px;
+  background: var(--bg-soft);
+}
+
+.heading-note {
+  max-width: 235px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.skills-checklist {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface-soft);
+}
+
+.checklist-column {
+  display: grid;
+  gap: 12px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.skill-item input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: default;
+}
+
+.skill-item span {
+  display: block;
+  line-height: 1.5;
+}
+
+@media (max-width: 820px) {
+  .skills-checklist {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .skill-item {
+    font-size: 10px;
+    letter-spacing: 0.03em;
+  }
+}

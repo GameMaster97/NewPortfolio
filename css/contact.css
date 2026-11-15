@@ -1,0 +1,155 @@
+.contact-section {
+  padding: 18px 0 100px;
+}
+
+.contact-panel {
+  position: relative;
+  display: flex;
+  min-height: 365px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  overflow: hidden;
+  padding: 64px 8%;
+  border: 1px solid color-mix(in srgb, var(--accent) 26%, var(--line));
+  border-radius: 9px;
+  background: radial-gradient(ellipse at 84% 47%, rgba(181, 244, 108, 0.12), transparent 32%), var(--surface);
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+}
+
+.contact-content h2 {
+  font-size: clamp(42px, 5vw, 59px);
+}
+
+.contact-content > p:not(.eyebrow):not(.contact-placeholder) {
+  max-width: 420px;
+  margin: 15px 0 21px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.contact-content .button {
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.contact-placeholder {
+  margin: 11px 0 0;
+  color: var(--faint);
+  font-size: 9px;
+}
+
+.contact-links {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: 180px;
+  gap: 0;
+}
+
+.contact-links a {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  transition: color 0.18s ease;
+}
+
+.contact-links a:hover {
+  color: var(--accent);
+}
+
+.contact-link-note {
+  margin-top: 9px;
+  color: var(--faint);
+  font-size: 9px;
+}
+
+.contact-decoration {
+  position: absolute;
+  top: 50%;
+  right: 22%;
+  width: 330px;
+  height: 330px;
+  border: 1px solid rgba(183, 243, 107, 0.08);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-decoration::before,
+.contact-decoration::after {
+  position: absolute;
+  inset: 25px;
+  border: 1px dashed rgba(183, 243, 107, 0.1);
+  border-radius: inherit;
+  content: "";
+}
+
+.contact-decoration::after {
+  inset: 63px;
+  border-style: solid;
+}
+
+.contact-decoration span {
+  position: absolute;
+  top: 10px;
+  right: 39px;
+  color: var(--accent);
+  font-size: 22px;
+}
+
+.contact-decoration i {
+  position: absolute;
+  top: 55px;
+  left: 33px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.contact-decoration b {
+  position: absolute;
+  right: 30px;
+  bottom: 55px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+}
+
+.footer-inner {
+  min-height: 78px;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-inner p {
+  margin: 0;
+  color: var(--faint);
+  font-size: 9px;
+}
+
+.footer-inner p span {
+  color: var(--accent);
+}
+
+.footer-inner .back-top {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.footer-inner .back-top:hover {
+  color: var(--accent);
+}
